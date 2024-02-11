@@ -1,13 +1,7 @@
 {
-	"name": "Frontend",
-	"dockerComposeFile": [
-		"../docker-compose.yml"
-	],
-	"service": "frontend-app",
-	"workspaceFolder": "/app",
-	"remoteUser": "node",
-	"forwardPorts": [],
-	"mounts": [],
+	"name": "Playwright",
+	"image": "mcr.microsoft.com/playwright:v1.41.2",
+	"workspaceFolder": "/workspaces/playwright",
 	"postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh",
 	"customizations": {
 		"vscode": {
@@ -16,11 +10,16 @@
 				"editor.formatOnSave": true
 			},
 			"extensions": [
-				"vue.volar",
-				"mechatroner.rainbow-csv",
-				"bierner.markdown-mermaid",
-				"Vue.vscode-typescript-vue-plugin"
+				"ms-playwright.playwright",
+				"alexkrechik.cucumberautocomplete"
 			]
 		}
-	}
+	},
+	"mounts": [
+		{
+			"type": "volume",
+			"source": "playwright-node_modules",
+			"target": "/workspaces/playwright/node_modules"
+		}
+	],
 }

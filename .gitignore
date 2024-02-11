@@ -1,24 +1,7 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
+node_modules/
+playwright-report/
+test-results/
 
-# Node dependencies
-node_modules
-
-# Logs
-logs
-*.log
-
-# Misc
-.DS_Store
-.fleet
-.idea
-
-# Local env files
-.env
-.env.*
-!.env.example
+# blob-report/
+# playwright/.cache/
+cucumber-report.html

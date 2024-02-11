@@ -1,8 +1,6 @@
 {
     "recommendations": [
-        "vue.volar",
-        "mechatroner.rainbow-csv",
-        "bierner.markdown-mermaid",
-        "vue.vscode-typescript-vue-plugin"
+        "ms-playwright.playwright",
+        "alexkrechik.cucumberautocomplete"
     ]
 }
